@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Фоновая музыка -->
+    <audio id="wedding-music" src="melody.mp3" loop></audio>
+
+    <!-- Верхнее меню (для прокрутки к блокам) -->
+    <nav class="top-nav">
+        <a href="#invitation">Приглашение</a>
+        <a href="#dress-code">Dress code</a>
+        <a href="#program">Программа</a>
+    </nav>
+
+    <!-- Обложка -->
+    <header class="hero" id="top">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">WEDDING DAY</p>
+            <h1 class="hero-names">Alina & Andrew</h1>
+            <p class="hero-date">21 · 07 · 2025</p>
+        </div>
+    </header>
+
+    <!-- Основное приглашение -->
+    <section class="section invitation" id="invitation">
+        <div class="section-inner invitation-inner">
+            <h2 class="section-title">WEDDING INVITATION</h2>
+            <p class="section-text">
+                Мы давно ждали момента, когда сможем разделить с вами
+                самый важный и счастливый день нашей жизни — день нашей свадьбы.
+            </p>
+
+            <div class="invitation-flower">
+                <img src="flower.jpg" alt="Цветок">
+            </div>
+
+            <div class="attention-block">
+                <h3 class="attention-title">ATTENTION*</h3>
+                <p class="section-text">
+                    Чтобы погрузиться в атмосферу праздника, нажмите на кнопку ниже.
+                </p>
+                <button class="music-btn" id="music-toggle">
+                    Включить музыку
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dress code -->
+    <section class="section dress-code" id="dress-code">
+        <div class="section-inner">
+            <h2 class="section-title">DRESS CODE*</h2>
+
+            <p class="section-text">
+                Нам будет особенно приятно видеть вас в нарядах цветовой
+                гаммы нашей свадьбы.
+            </p>
+
+            <div class="palette">
+                <span class="color-circle" style="--circle-color:#a4b597;"></span>
+                <span class="color-circle" style="--circle-color:#8f9680;"></span>
+                <span class="color-circle" style="--circle-color:#c4b9a1;"></span>
+                <span class="color-circle" style="--circle-color:#d9a49a;"></span>
+                <span class="color-circle" style="--circle-color:#e3c7b5;"></span>
+            </div>
+
+            <p class="section-text">
+                Для мужчин уместным будет классический костюм со светлой рубашкой.
+            </p>
+            <p class="section-text">
+                Девушек просим выбирать вечерние и коктейльные платья
+                предложенных оттенков и избегать белого цвета.
+            </p>
+
+            <!-- Если захочешь, поменяешь ссылку на Pinterest/Google Диск -->
+            <a class="outline-btn" href="#" target="_blank">
+                Примеры образов
+            </a>
+        </div>
+    </section>
+
+    <!-- Программа свадьбы -->
+    <section class="section program" id="program">
+        <div class="section-inner program-inner">
+            <h2 class="section-title">WEDDING PROGRAM</h2>
+
+            <div class="program-list">
+                <div class="program-row">
+                    <span class="time">15:00–15:30</span>
+                    <span class="event">Сбор гостей</span>
+                </div>
+                <div class="program-row">
+                    <span class="time">15:30–16:00</span>
+                    <span class="event">Церемония</span>
+                </div>
+                <div class="program-row">
+                    <span class="time">16:00–18:00</span>
+                    <span class="event">Фотосессия и фуршет</span>
+                </div>
+                <div class="program-row">
+                    <span class="time">18:00–21:00</span>
+                    <span class="event">Банкет</span>
+                </div>
+                <div class="program-row">
+                    <span class="time">21:00–22:00</span>
+                    <span class="event">Торт и салют</span>
+                </div>
+            </div>
+
+            <div class="program-photo">
+                <!-- Силуэт / фото пары -->
+                <img src="couple.jpg" alt="Пара">
+                <img class="program-flower" src="flower.jpg" alt="Цветок">
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <p>Адрес площадки: здесь можно указать адрес</p>
+        <p>По вопросам организации: +7 (000) 000-00-00</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
